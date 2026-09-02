@@ -1,0 +1,33 @@
+{
+  "port": 3000,
+  "apiKey": "AoOpMgLEFd0Gm1rxP9eHI7BtiYDTQCbwafkJcv4Rl68hXW2n",
+  "branding": {
+    "siteName": "MeshTexas Analyzer",
+    "tagline": "Real-time MeshCore analyzer"
+  },
+  "mqttSources": [
+    {
+      "name": "meshcore-hub",
+      "broker": "ws://meshcorehub-mqtt:1883/",
+      "username": "corescope",
+      "password": "doggoat07",
+      "topics": ["meshcore/#"]
+    }
+  ],
+  "timestamps": {
+    "defaultMode": "absolute",
+    "timezone": "local",
+    "formatPreset": "us"
+  },
+  "retention": {
+    "nodeDays": 7,
+    "packetDays": 30
+  },
+  "packetStore": {
+    "retentionHours": 168
+  },
+  "mapDefaults": {
+    "center": [31.0, -99.0],
+    "zoom": 6
+  }
+}
