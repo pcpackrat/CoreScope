@@ -13,7 +13,7 @@ services:
       dockerfile: Dockerfile
       args:
         APP_VERSION: local
-    image: corescope:latest
+    pull_policy: build
     container_name: corescope
     restart: unless-stopped
     stop_grace_period: 30s
