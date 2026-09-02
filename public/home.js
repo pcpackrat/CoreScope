@@ -67,9 +67,7 @@
       <section class="home-chooser">
         <h1>${escapeHtml(window.SITE_CONFIG?.home?.welcomeTitle || ('Welcome to ' + (window.SITE_CONFIG?.branding?.siteName || 'CoreScope')))}</h1>
         <p>${escapeHtml(window.SITE_CONFIG?.home?.welcomeSubtitle || 'How familiar are you with MeshCore?')}</p>
-
-        <p>How familiar are you with MeshCore?</p>
-        <div class="chooser-options">
+         <div class="chooser-options">
           <button class="chooser-btn new" id="chooseNew">
             <span class="chooser-icon" aria-hidden="true"><svg class="ph-icon" aria-hidden="true"><use href="/icons/phosphor-sprite.svg#ph-plant"/></svg></span>
             <strong>I\u2019m new</strong>
